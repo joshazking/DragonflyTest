@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        
+        transform.Rotate(0, 0,  90 * Time.deltaTime);
     }
-
     private void OnTriggerEnter(Collider other) 
     {
 
         if(other.name == "Spitfire_body")
         {
-            other.GetComponent<score>().points++;
             //destroy coin and add 1 to score
+            other.GetComponent<score>().points++;
             Destroy(gameObject);
         }
 
