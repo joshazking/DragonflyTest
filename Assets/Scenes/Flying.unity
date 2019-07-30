@@ -343,10 +343,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2338812075595954443}
-  - {fileID: 8852337912589889207}
   - {fileID: 1019289550}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &445656454
 PrefabInstance:
@@ -2075,7 +2074,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 30
+  orthographic size: 20.2
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -2322,6 +2321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d489dff1181100646a5e04523dffa747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 189692239}
 --- !u!81 &8463650107234386271
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2338,9 +2338,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8152102637501286759}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.462631, y: 570.2007, z: 2.2185555}
-  m_LocalScale: {x: 3.3333287, y: 3.3333707, z: 3.3333707}
+  m_LocalPosition: {x: 1.462631, y: 571.41986, z: 2.6785555}
+  m_LocalScale: {x: 3.3333287, y: 3.3333726, z: 3.3333726}
   m_Children: []
-  m_Father: {fileID: 189692247}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
