@@ -8,7 +8,7 @@ public class score : MonoBehaviour
 
     private void OnGUI() 
     {
-        GUI.Label(new Rect(10,10,100,20), "Score : " + points);    
+        GUI.Label(new Rect(10,10,1000,200), "Score : " + points);    
     }
 
 }
