@@ -5,7 +5,7 @@ using UnityEngine;
 public class Flying : MonoBehaviour
 {
     public float power;
-    public GameObject Plane;
+    public GameObject PlayerBird;
 
     private Rigidbody rb; 
 
@@ -40,23 +40,23 @@ public class Flying : MonoBehaviour
 
         if (isW == true)
         {
-            Plane.transform.Rotate(rotZ);
+            PlayerBird.transform.Rotate(rotZ);
         }
         if (isS == true)
         {
-            Plane.transform.Rotate(-rotZ);
+            PlayerBird.transform.Rotate(-rotZ);
         }
 
-        if (isRight == true && Plane.transform.rotation.x <= 90)
+        if (isRight == true && PlayerBird.transform.rotation.x <= 90)
         {
-            //Plane.transform.Rotate(rotX);
-            //Plane.transform.Rotate(rotY);
+            //PlayerBird.transform.Rotate(rotX);
+            //PlayerBird.transform.Rotate(rotY);
             rb.AddRelativeForce(Vector3.right * power * 100);
         }
-        if (isLeft == true && Plane.transform.rotation.x >= -90)
+        if (isLeft == true && PlayerBird.transform.rotation.x >= -90)
         {
-            //Plane.transform.Rotate(-rotX);
-            //Plane.transform.Rotate(-rotY);
+            //PlayerBird.transform.Rotate(-rotX);
+            //PlayerBird.transform.Rotate(-rotY);
             rb.AddRelativeForce(Vector3.left * power * 100);
         }
 
@@ -65,12 +65,12 @@ public class Flying : MonoBehaviour
 
         {
             //rb.AddRelativeForce(Vector3.left * power * -100);
-            Plane.transform.Rotate(-rotX);
+            PlayerBird.transform.Rotate(-rotX);
         }
         if (isD == true)
         {
             //rb.AddRelativeForce(Vector3.right * power * -100);
-            Plane.transform.Rotate(rotX);
+            PlayerBird.transform.Rotate(rotX);
         }
 
     }

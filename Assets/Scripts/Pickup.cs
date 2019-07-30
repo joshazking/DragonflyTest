@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {
 
-        if(other.name == "Spitfire_body")
+        if(other.name == "PlayerBird")
         {
             //destroy coin and add 1 to score
             other.GetComponent<score>().points++;
